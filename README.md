@@ -256,7 +256,7 @@ document.querySelector("#app").append(clone);
 
 </details>
 
-It's a little annoying that templates have to be defined in the HTML file. We're doing all our rendering within JavaScript, so it would be nice to keep all the templates there too. It would also you could just import a JS file and get all the functionality defined within it. There's no good way to import HTML, so you'd have to manually add the required templates to the HTML file as well as importing the JS.
+It's a little annoying that templates have to be defined in the HTML file. We're doing all our rendering within JavaScript, so it would be nice to keep all the templates there too. There's no good way to import HTML, so to use a template you'd have to manually add the required templates elements to the HTML file as well as importing the JS.
 
 We can work around this by combining all three of our rendering methods. We can create a new template element within our JS, set its content using `innerHTML`, then clone that template whenever we need a copy. The template is never actually on the page, it just lives inside our JS.
 
@@ -312,4 +312,4 @@ document.querySelector("#app").append(clone);
 
 ## Conclusion
 
-All of these techniques are valid, and all have their place. It's good to understand the platform you're working with, even if you end up using a framework like React that abstracts all this DOM manipulation away;
+All of these techniques are valid, and all have their place. It's good to understand the platform you're working with, even if you end up using a framework like React that abstracts all this DOM manipulation away.
