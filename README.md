@@ -160,7 +160,7 @@ document.querySelector("#app").append(title, list);
 
 ## `innerHTML`
 
-This method almost feels like cheating. If you set the `innerHTML` property of an element anything inside the string is interpreted as HTML by the browser and rendered. This makes it a quick way to render a chunk of DOM, especially combined with template literals:
+This method almost feels like cheating. Whatever you set the `innerHTML` property of an element to is interpreted as HTML by the browser and rendered. This makes it a quick way to render a chunk of DOM, especially combined with template literals:
 
 ```js
 container.innerHTML = `<div>Hello ${name}</div>`;
