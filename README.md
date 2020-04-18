@@ -18,7 +18,6 @@ There is an array of dog objects in `workshop/dogs.js`. You need to import that 
   <li class="card">
     <h2>Dog name</h2>
     <img src="dog image url" alt="" />
-    <p>x years old. Weighs ykg</p>
   </li>
 </ul>
 ```
@@ -67,9 +66,6 @@ const dogElements = dogs.map((dog) => {
   const img = document.createElement("img");
   img.src = dog.image;
   img.alt = "";
-
-  const p = document.createElement("p");
-  p.textContent = `${dog.age} years old. Weighs ${dog.weight}kg`;
 
   const li = document.createElement("li");
   li.append(h2, img, p);
@@ -146,8 +142,7 @@ import dogs from "./dogs.js";
 const dogElements = dogs.map((dog) => {
   const h2 = h("h2", {}, dog.name);
   const img = h("img", { src: dog.image, alt: "", width: 500, height: 300 });
-  const p = h("p", {}, `${dog.age} years old. Weighs ${dog.weight}kg`);
-  return h("li", { className: "card" }, h2, img, p);
+  return h("li", { className: "card" }, h2, img);
 });
 
 const title = h("h1", {}, "All the dogs");
@@ -186,7 +181,6 @@ const dogElements = dogs
     <li class="card">
       <h2>${dog.name}</h2>
       <img src="${dog.image}" alt="" />
-      <p>${dog.age} years old. Weighs ${dog.weight}kg</p>
     </li>
   `
   )
@@ -241,9 +235,6 @@ const dogElements = dogs.map((dog) => {
   const clone = cardTemplate.content.cloneNode(true);
   clone.querySelector("h2").append(dog.name);
   clone.querySelector("img").src = dog.image;
-  clone
-    .querySelector("p")
-    .append(`${dog.age} years old. Weighs ${dog.weight}kg`);
   return clone;
 });
 
@@ -283,7 +274,6 @@ cardTemplate.innerHTML = `
   <li class="card">
     <h2></h2>
     <img src="" alt="" width="500" height="300" />
-    <p></p>
   </li>
 `;
 
@@ -291,9 +281,6 @@ const dogElements = dogs.map((dog) => {
   const clone = cardTemplate.content.cloneNode(true);
   clone.querySelector("h2").append(dog.name);
   clone.querySelector("img").src = dog.image;
-  clone
-    .querySelector("p")
-    .append(`${dog.age} years old. Weighs ${dog.weight}kg`);
   return clone;
 });
 

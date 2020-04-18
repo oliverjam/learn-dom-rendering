@@ -6,9 +6,6 @@ const dogElements = dogs.map((dog) => {
   const clone = cardTemplate.content.cloneNode(true);
   clone.querySelector("h2").append(dog.name);
   clone.querySelector("img").src = dog.image;
-  clone
-    .querySelector("p")
-    .append(`${dog.age} years old. Weighs ${dog.weight}kg`);
   return clone;
 });
 

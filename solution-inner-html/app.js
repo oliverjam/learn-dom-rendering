@@ -6,7 +6,6 @@ const dogElements = dogs
     <li class="card">
       <h2>${dog.name}</h2>
       <img src="${dog.image}" alt="" width="500" height="300" />
-      <p>${dog.age} years old. Weighs ${dog.weight}kg</p>
     </li>
   `
   )
