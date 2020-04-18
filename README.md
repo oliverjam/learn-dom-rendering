@@ -46,13 +46,13 @@ container.append("Some text", newNode, anotherNode, "more text");
 This is powerful when combined with the spread operator, as it means you can append an array of elements in one go:
 
 ```js
-const elements = data.map((x) => createElementHowever(x));
+const elements = dogs.map((dog) => createListElementSomehow(dog));
 container.append(...elements);
 ```
 
 ### Challenge 1
 
-Use `document.createElement` and `append` to render the UI from the start. Remember we want a page title and a list item for every dog in the array.
+Use `document.createElement` and `append` to render the UI from the start. Remember we want a page title, a list, and a list item for every dog in the array.
 
 <details>
 <summary>Solution</summary>
