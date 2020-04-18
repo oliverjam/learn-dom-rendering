@@ -98,7 +98,7 @@ const p = h("p", { className: "test" }, "Some text content", childNode);
 
 We'll call the function `h` (for "html"). It takes a tag name as the first argument, just like `createElement`. However it also takes an object of properties to add to the element (e.g. `className`, `src` etc). Finally any additional arguments should be appended as children.
 
-Create a new file `create-element.js`. Write a function that takes three arguments: `tag`, `props` and `...children`. The `...` is the [rest operator]()—when used in function arguments like this it gathers all the additional arguments into an array. So any arguments after the properties object with go into a single array named children.
+Create a new file `create-element.js`. Write a function that takes three arguments: `tag`, `props` and `...children`. The `...` is the [rest operator]()—when used in function arguments like this it gathers all the additional arguments into an array. So any arguments after the properties object will go into a single array named `children`.
 
 First create a new element using the `tag` argument:
 
