@@ -219,9 +219,7 @@ This is useful because we don't have to dynamically create elements: we can use 
 
 ### Challenge 4
 
-It can be a little verbose to use them, so a helper function to abstract away getting the clone is helpful. Write a function `getTemplate` that takes an ID and returns a clone of the template with that ID.
-
-Use the template element and your `getTemplate` function to create the UI. You'll need to edit the HTML file.
+Use the template element to create the same UI. You'll need to edit the HTML file too.
 
 <details>
 <summary>Solution</summary>
