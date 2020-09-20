@@ -68,7 +68,7 @@ const dogElements = dogs.map((dog) => {
   img.alt = "";
 
   const li = document.createElement("li");
-  li.append(h2, img, p);
+  li.append(h2, img);
 
   return li;
 });
